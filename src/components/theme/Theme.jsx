@@ -1,29 +1,22 @@
 import { useState } from 'react';
-import './Sidebar.scss'
+import './Theme.scss';
 
-
-// code https://codepen.io/aybukeceylan/pen/wvpBmrq
-
-const Sidebar = () => {
+const Theme = () => {
   const [isShrinkView] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // const handleSidebarView = () => {
-  //   setIsShrinkView(!isShrinkView);
-  // };
-
   const handleThemeChange = () => {
     setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark");
+    document.body.classList.toggle('dark');
   };
 
   return (
-    <div className={`sidebar-container${isShrinkView ? " shrink" : ""}`}>
+    <div className={`sidebar-container${isShrinkView ? ' shrink' : ''}`}>
       <div className="sidebar-wrapper">
         <div className="sidebar-themeContainer">
           <label
             htmlFor="theme-toggle"
-            className={`sidebar-themeLabel${isDarkMode ? " switched" : ""}`}
+            className={`sidebar-themeLabel${isDarkMode ? ' switched' : ''}`}
           >
             <input
               className="sidebar-themeInput"
@@ -73,6 +66,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
-
-
+export default Theme;

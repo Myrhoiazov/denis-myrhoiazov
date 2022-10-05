@@ -1,6 +1,6 @@
 import { NavLink} from 'react-router-dom';
-import Sidebar from 'components/light-dark/Sidebar';
-import s from '../Header/header.module.css';
+import Sidebar from 'components/theme/Theme';
+import s from '../header/header.module.css';
 
 const getActiveClassName = ({ isActive }) => {
   return isActive ? `${s.item} ${s.active}` : s.item;

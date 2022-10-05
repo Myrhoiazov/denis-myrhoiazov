@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import Header from '../../modules/Header';
-import Loader from '../../components/Loader/Loader';
-import Modal from '../../components/Modal';
+import Header from '../../components/header';
+import Loader from '../../components/loader/Loader';
+import Modal from '../../components/modal';
 import s from './Home.module.css';
 import axios from 'axios';
 import { AiOutlineCloseCircle } from 'react-icons/ai';

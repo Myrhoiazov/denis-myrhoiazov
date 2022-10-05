@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
-import Header  from '../../modules/Header';
-import Loader from '../../components/Loader';
+import Header  from '../../components/header';
+import Loader from '../../components/loader';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import s from './AboutFilms.module.css';

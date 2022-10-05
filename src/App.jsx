@@ -13,7 +13,7 @@ const AboutFilmsPage = lazy(() => import('./pages/AboutFilms'));
 
 export const App = () => {
   return (
-    <BrowserRouter basename="goit-react-hw-05-movies">
+    <BrowserRouter basename="/my-portfolio">
       <Suspense fallback={<Loader />}>
       <Routes>
         {/* <Route path="/" element={<Header />}> */}

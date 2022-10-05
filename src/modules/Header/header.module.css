@@ -1,0 +1,42 @@
+.header {
+  background-color: rgb(3 37 65);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.item {
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 70px;
+  padding: 10px;
+
+  font-size: 14px;
+  color: white;
+  border-radius: 8px;
+
+  transition: all ease-in 150ms;
+}
+
+.item.active {
+  color: white;
+  background-color: rgb(255, 174, 0);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

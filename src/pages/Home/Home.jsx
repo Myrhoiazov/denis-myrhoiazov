@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <div className={isShow ? s.hidden : null}>
-      <Header />
+      {/* <Header /> */}
       <div className={s.wrapper}>
         <div className={s.hero}>
           <h1 className={s.title}>Trending Film today</h1>

@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import Header from './modules/Header';
+import Header from './components/header';
 import Cast from './pages/AboutFilms/Cast';
 import Reviews from 'pages/AboutFilms/Reviews';
 import Loader from 'components/loader';
@@ -16,9 +16,9 @@ export const App = () => {
     <BrowserRouter basename="/denis-myrhoiazov">
       <Suspense fallback={<Loader />}>
       <Routes>
-        {/* <Route path="/" element={<Header />}> */}
-          <Route index element={<HomePage />} />
-          <Route path="/movies" element={<MoviesPage />} />
+        <Route element={<Header />}/>
+          <Route path='/' element={<HomePage />} />
+          <Route path="/about" element={<MoviesPage />} />
           <Route path="/movies/:moviesId" element={<AboutFilmsPage />}>
             <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<Reviews />} />

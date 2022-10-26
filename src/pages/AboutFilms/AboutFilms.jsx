@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
-import Header  from '../../components/header';
 import Loader from '../../components/loader';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -40,7 +39,6 @@ const AboutFilms = () => {
   return (
     <>
       {loader && <Loader />}
-      <Header/>
       {
         <section>
           <div className={s.container}>

@@ -1,0 +1,79 @@
+.info_hero {
+  padding: 60px 0;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.name {
+  font-size: 52px;
+  font-weight: 800;
+  max-width: 350px;
+
+  text-transform: uppercase;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 150px;
+  margin-left: 200px;
+
+  .text_accent {
+    font-weight: 600;
+  }
+}
+
+.btn_group {
+  display: flex;
+  align-items: center;
+
+  transform: translate(10px, -30px) rotate(-90deg);
+  margin-left: auto;
+  max-width: 200px;
+  min-height: 70px;
+}
+
+.btn_lang {
+  display: inline-block;
+
+  cursor: pointer;
+  min-width: 50px;
+  font-size: 16px;
+  border: none;
+  padding: 5px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: transparent;
+
+  transition: font-size 350ms ease-in-out, font-weight 350ms ease-in-out;
+
+  &:hover {
+    font-size: 18px;
+    font-weight: 600;
+    transition: font-size 350ms ease-in-out, font-weight 350ms ease-in-out;
+  }
+
+  .active {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.active {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 400px;
+
+  background-image: url('../../assets/images/1x-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

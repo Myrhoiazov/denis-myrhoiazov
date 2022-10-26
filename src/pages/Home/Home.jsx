@@ -1,126 +1,62 @@
-import { useState, useEffect, useCallback } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { toast } from 'react-toastify';
-import Header from '../../components/header';
-import Loader from '../../components/loader/Loader';
-import Modal from '../../components/modal';
-import s from './Home.module.css';
-import axios from 'axios';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { useTranslation } from 'react-i18next';
+import '../../i18next';
+import Container from 'components/container/Container';
+import s from './Home.module.scss';
+import { useState } from 'react';
 
 const Home = () => {
-  const [films, setFilms] = useState([]);
-  const [loader, setLoader] = useState(false);
-  const [filmCard, setFilmsCard] = useState({});
-  const [isShow, setIsShow] = useState(false);
+  const [lang, setLang] = useState('ua')
+  const { i18n } = useTranslation();
 
-  const location = useLocation();
 
-  const serviceApi = useCallback(async () => {
-    try {
-      setLoader(true);
-      const response = await axios.get(
-        `https://api.themoviedb.org/3/trending/all/day?api_key=53f28f10fb3650af7c7f4f04a387344f`
-      );
-      setFilms(response.data.results);
-    } catch (error) {
-      toast.error('Что то пошло не так :(');
-    } finally {
-      setLoader(false);
-    }
-  }, []);
-
-  const isShowModal = film => {
-    setFilmsCard(film);
-    setIsShow(state => !state);
+  const changeLanguage = lang => {
+    setLang(lang)
+    i18n.changeLanguage(lang);
   };
 
-  useEffect(() => {
-    serviceApi();
-  }, [serviceApi, filmCard]);
+  const activeLang = (name = 'ua') =>{
+    return lang === name ? `${s.btn_lang} ${s.active}` : s.btn_lang
+  }
 
   return (
-    <div className={isShow ? s.hidden : null}>
-      {/* <Header /> */}
-      <div className={s.wrapper}>
-        <div className={s.hero}>
-          <h1 className={s.title}>Trending Film today</h1>
-          <p className={s.text}>
-            Добро пожаловать. Миллионы фильмов, сериалов и людей. Исследуйте
-            сейчас.
-          </p>
+    <Container>
+      <div className={s.info_hero}>
+        <div className={s.name}>Denys Myrhoiazov</div>
+        <div className={s.text}>
+          FrontEnd developer <span className={s.text_accent}> Ukraine</span>
         </div>
-
-        {loader && <Loader />}
-        {
-          <ul className={s.list}>
-            {films.map(film => (
-              <li key={film.id} onClick={() => isShowModal(film)}>
-                <div className={s.list__thumb}>
-                  <img
-                    className={s.list__img}
-                    src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
-                    width="230"
-                    alt={film.title}
-                  />
-                </div>
-                <p className={s.list__title}>
-                  {film.original_title || film.original_name}
-                </p>
-              </li>
-            ))}
-          </ul>
-        }
+        <div className={s.btn_group}>
+          <button
+            className={activeLang('ua')}
+            type="button"
+            onClick={() => changeLanguage('ua')}
+          >
+            Ua
+          </button>
+          <button
+            className={activeLang('en')}
+            type="button"
+            onClick={() => changeLanguage('en')}
+          >
+            En
+          </button>
+          <button
+            className={activeLang('ru')}
+            type="button"
+            onClick={() => changeLanguage('ru')}
+          >
+            Ru
+          </button>
+        </div>
       </div>
-
-      {isShow && (
-        <Modal onClose={isShowModal}>
-          <article className={s.modal__container}>
-            <AiOutlineCloseCircle
-              className={s.btn__close}
-              onClick={() => setIsShow(state => !state)}
-            />
-            <div>
-              <div className={s.card}>
-                <div className={s.thumb__photo}>
-                  <img
-                    className={s.photo}
-                    src={`https://image.tmdb.org/t/p/w500${filmCard.poster_path}`}
-                    alt=""
-                  />
-                </div>
-                <div className={s.data__content}>
-                  <h1 className={s.modal__title}>
-                    {filmCard.name || filmCard.title}
-                  </h1>
-                  <p className={s.modal__text}>
-                    {' '}
-                    <span className={s.modal__text_accent}>Overview: </span>
-                    {filmCard.overview}
-                  </p>
-                  <p className={s.list__text}>
-                    <span className={s.modal__text_accent}>Rating: </span>
-                    {Math.round(filmCard.vote_average)}
-                  </p>
-                  <p className={s.list__text}>
-                    <span className={s.modal__text_accent}>Popularity: </span>
-                    {filmCard.popularity}
-                  </p>
-                  <Link
-                    className={s.button}
-                    type="button"
-                    to={`/movies/${filmCard.id}`}
-                    state={{ from: location }}
-                  >
-                    Reed More...
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </article>
-        </Modal>
-      )}
-    </div>
+      <div className={s.hero}>
+        {/* <h1 className={s.title}>Trending Film today</h1>
+        <p className={s.text}>
+          Добро пожаловать. Миллионы фильмов, сериалов и людей. Исследуйте
+          сейчас.
+        </p> */}
+      </div>
+    </Container>
   );
 };
 

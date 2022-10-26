@@ -1,7 +1,6 @@
 import FilmsSearch from '../../components/filmsSearch/FilmsSearch';
 import { useState, useEffect } from 'react';
 import Loader from 'components/loader';
-import Header from '../../components/header';
 import axios from 'axios';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -54,7 +53,6 @@ const Movies = () => {
 
   return (
     <>
-      <Header />
       <div className={s.wrapper}>
         <FilmsSearch onSubmitValue={onSubmitValue} />
         {loader && <Loader />}

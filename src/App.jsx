@@ -14,17 +14,17 @@ const AboutFilmsPage = lazy(() => import('./pages/AboutFilms'));
 export const App = () => {
   return (
     <BrowserRouter basename="/denis-myrhoiazov">
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<Loader/>}>
       <Routes>
-        <Route element={<Header />}/>
-          <Route path='/' element={<HomePage />} />
+        <Route element={<Header />}>
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<MoviesPage />} />
           <Route path="/movies/:moviesId" element={<AboutFilmsPage />}>
             <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
           <Route path="*" element={<Navigate to="/" />} />
-        {/* </Route> */}
+        </Route>
       </Routes>
       </Suspense>
       <ToastContainer />

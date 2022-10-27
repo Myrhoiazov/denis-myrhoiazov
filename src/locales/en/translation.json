@@ -3,5 +3,11 @@
   "About me": "About me",
   "Skills": "Skills",
   "Portfolio": "Portfolio",
-  "Contact": "Contact"
+  "Contact": "Contact",
+
+  "hero": {
+    "name": "Denys Myrhoiazov",
+    "text": "FrontEnd developer",
+    "country": "Ukraine"
+  }
 }

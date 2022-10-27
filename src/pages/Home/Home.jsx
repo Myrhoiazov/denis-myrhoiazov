@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Home = () => {
   const [lang, setLang] = useState('ua')
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
 
   const changeLanguage = lang => {
@@ -21,9 +21,9 @@ const Home = () => {
   return (
     <Container>
       <div className={s.info_hero}>
-        <div className={s.name}>Denys Myrhoiazov</div>
+        <div className={s.name}>{t('hero.name')}</div>
         <div className={s.text}>
-          FrontEnd developer <span className={s.text_accent}> Ukraine</span>
+        {t('hero.text')}<span className={s.text_accent}>{t('hero.country')}</span>
         </div>
         <div className={s.btn_group}>
           <button

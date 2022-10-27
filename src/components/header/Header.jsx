@@ -9,6 +9,7 @@ import headerMenu from './headermenu';
 import Container from 'components/container/Container';
 import '../../i18next';
 import { useState } from 'react';
+import Clock from 'components/clock';
 
 const getActiveClassName = ({ isActive }) => {
   return isActive ? `${s.item} ${s.active}` : s.item;
@@ -41,6 +42,7 @@ const Header = () => {
           <div className={s.wrapper}>
             <nav className={s.nav}>
               <Sidebar />
+              <Clock/>
               {isShowBurgerMenu && (
                 <button
                   type="button"

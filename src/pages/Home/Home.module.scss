@@ -43,7 +43,7 @@
   justify-content: center;
   align-items: center;
   // color: inherit;
-  color: var(--text-color);
+  color: grey;
   font-size: 16px;
   border: none;
   width: 40px;
@@ -55,11 +55,14 @@
   &:hover {
     font-size: 18px;
     font-weight: 600;
+    color: var(--text-color);
+
   }
 
-  .active {
+  &.active {
     font-size: 18px;
     font-weight: 600;
+    color: var(--text-color);
   }
 }
 

@@ -7,12 +7,10 @@ import translationEN from './locales/en/translation.json';
 import translationUA from './locales/ua/translation.json';
 import translationRU from './locales/ru/translation.json';
 
-
 const resources = {
   en: {
     translation: translationEN,
   },
-
   ua: {
     translation: translationUA,
   },
@@ -20,7 +18,6 @@ const resources = {
     translation: translationRU,
   },
 };
-
 
 i18n
   .use(Backend)

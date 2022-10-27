@@ -28,7 +28,6 @@ const Header = () => {
     setIsShowMenu(!isShowMenu);
   };
 
-  
   const onClickBackground = e => {
     if (e.target === e.currentTarget) {
       setIsShowMenu(!isShowMenu);
@@ -54,7 +53,7 @@ const Header = () => {
               {isDesktop &&
                 headerMenu.map(({ name, to }) => {
                   return (
-                    <div key={name} className={s.link_items}>
+                    <div key={name}>
                       <NavLink to={to} end className={getActiveClassName}>
                         {t(name)}
                       </NavLink>
@@ -62,11 +61,11 @@ const Header = () => {
                   );
                 })}
             </nav>
-            {isShowMenu && !isDesktop && (
+            {isShowBurgerMenu && (
               <nav
                 onClick={onClickBackground}
                 className={
-                  isShowMenu ? `${s.nav_mobile} ${s.show}` : s.nav_mobile
+                  isShowMenu ? `${s.nav_mobile} ${s.showMob}` : s.nav_mobile
                 }
               >
                 <div
@@ -76,7 +75,7 @@ const Header = () => {
                       : s.nav_mobile_wrapper
                   }
                 >
-                  {isShowBurgerMenu && (
+                  {
                     <button
                       type="button"
                       className={s.btn_close}
@@ -84,7 +83,7 @@ const Header = () => {
                     >
                       <HighlightOffIcon color="inherit" fontSize="large" />
                     </button>
-                  )}
+                  }
 
                   {headerMenu.map(({ name, to }) => {
                     return (
@@ -100,6 +99,7 @@ const Header = () => {
             )}
           </div>
         </header>
+
         {<Outlet />}
       </Container>
     </>

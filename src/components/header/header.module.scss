@@ -42,18 +42,27 @@
 
 .nav_mobile {
   position: fixed;
-  z-index: 1;
+  z-index: -1;
   top: 0;
   left: 0;
+
+  opacity: 0;
 
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 
+  transition: all 0.4s ease;
+
+  &.showMob {
+    z-index: 1;
+    opacity: 1;
+  }
 }
 
 .nav_mobile_wrapper {
   position: absolute;
+  z-index: 2;
   top: 0;
   right: 0;
   transform: translateX(100%);
@@ -99,13 +108,13 @@
 .link_items {
   margin-bottom: 10px;
 
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &:hover{
+  &:hover {
     padding-left: 10px;
   }
 }
@@ -133,5 +142,14 @@
   &.active_mob {
     color: rgb(255, 174, 0);
     text-decoration: none;
+  }
+}
+
+.back {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+
+  &.show {
+    display: block;
   }
 }

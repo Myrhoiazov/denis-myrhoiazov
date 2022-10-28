@@ -10,6 +10,7 @@ import Container from 'components/container/Container';
 import '../../i18next';
 import { useState } from 'react';
 import Clock from 'components/clock';
+import Footer from 'components/footer';
 
 const getActiveClassName = ({ isActive }) => {
   return isActive ? `${s.item} ${s.active}` : s.item;
@@ -38,11 +39,12 @@ const Header = () => {
   return (
     <>
       <Container>
+        <div className={s.flexWrapper}>
         <header className={s.header}>
           <div className={s.wrapper}>
             <nav className={s.nav}>
               <Sidebar />
-              <Clock/>
+              <Clock />
               {isShowBurgerMenu && (
                 <button
                   type="button"
@@ -101,8 +103,10 @@ const Header = () => {
             )}
           </div>
         </header>
+        <main className={s.main}>{<Outlet />}</main>
 
-        {<Outlet />}
+        <Footer />
+        </div>
       </Container>
     </>
   );

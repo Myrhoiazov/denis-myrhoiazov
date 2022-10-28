@@ -56,7 +56,6 @@
     font-size: 18px;
     font-weight: 600;
     color: var(--text-color);
-
   }
 
   &.active {
@@ -72,7 +71,8 @@
 }
 
 .hero {
-  min-height: 400px;
+  min-height: 350px;
+  border-radius: 10px;
 
   background-image: url('../../assets/images/1x-min.jpg');
   background-repeat: no-repeat;

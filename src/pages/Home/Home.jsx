@@ -50,11 +50,6 @@ const Home = () => {
         </div>
       </div>
       <div className={s.hero}>
-        {/* <h1 className={s.title}>Trending Film today</h1>
-        <p className={s.text}>
-          Добро пожаловать. Миллионы фильмов, сериалов и людей. Исследуйте
-          сейчас.
-        </p> */}
       </div>
     </Container>
   );

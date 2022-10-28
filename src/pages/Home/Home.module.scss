@@ -1,16 +1,27 @@
 .info_hero {
-  padding: 60px 0;
+  padding: 20px 0 30px;
   min-height: 250px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.name_text {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 350px;
+  margin-bottom: 20px;
+
+  .name_accent{
+  font-weight: 800;
+  margin-left: 10px;
+  }
 }
 
 .name {
   font-size: 52px;
   font-weight: 800;
   max-width: 350px;
-
   text-transform: uppercase;
 }
 
@@ -24,12 +35,12 @@
 
   .text_accent {
     display: block;
-    font-weight: 600;
+    font-weight: 800;
   }
 }
 
 .btn_group {
-  transform: translate(10px, -30px) rotate(-90deg);
+  transform: translate(10px, 0) rotate(-90deg);
 }
 
 .hero {

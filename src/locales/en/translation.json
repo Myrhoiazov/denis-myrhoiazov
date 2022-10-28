@@ -6,6 +6,8 @@
   "Contact": "Contact",
 
   "hero": {
+    "hello": "Hello!",
+    "hello-accent": "I'm",
     "name": "Denys Myrhoiazov",
     "text": "FrontEnd developer",
     "country": "Ukraine"

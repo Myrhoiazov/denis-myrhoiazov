@@ -89,7 +89,7 @@ const Header = () => {
                         <HighlightOffIcon color="inherit" fontSize="large" />
                       </button>
                     }
-                    <div style={{ marginBottom: 40 }}>
+                    <div style={{ marginBottom: 40, paddingTop: 20 }}>
                       <ToggleLang />
                     </div>
 

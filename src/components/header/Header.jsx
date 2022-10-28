@@ -11,6 +11,7 @@ import '../../i18next';
 import { useState } from 'react';
 import Clock from 'components/clock';
 import Footer from 'components/footer';
+import ToggleLang from 'components/toggle-lang';
 
 const getActiveClassName = ({ isActive }) => {
   return isActive ? `${s.item} ${s.active}` : s.item;
@@ -40,72 +41,75 @@ const Header = () => {
     <>
       <Container>
         <div className={s.flexWrapper}>
-        <header className={s.header}>
-          <div className={s.wrapper}>
-            <nav className={s.nav}>
-              <Sidebar />
-              <Clock />
-              {isShowBurgerMenu && (
-                <button
-                  type="button"
-                  className={s.btn_open}
-                  onClick={onHandleShow}
-                >
-                  <MenuIcon color="inherit" />
-                </button>
-              )}
-              {isDesktop &&
-                headerMenu.map(({ name, to }) => {
-                  return (
-                    <div key={name}>
-                      <NavLink to={to} end className={getActiveClassName}>
-                        {t(name)}
-                      </NavLink>
-                    </div>
-                  );
-                })}
-            </nav>
-            {isShowBurgerMenu && (
-              <nav
-                onClick={onClickBackground}
-                className={
-                  isShowMenu ? `${s.nav_mobile} ${s.showMob}` : s.nav_mobile
-                }
-              >
-                <div
-                  className={
-                    isShowMenu
-                      ? `${s.nav_mobile_wrapper} ${s.show}`
-                      : s.nav_mobile_wrapper
-                  }
-                >
-                  {
-                    <button
-                      type="button"
-                      className={s.btn_close}
-                      onClick={onHandleShow}
-                    >
-                      <HighlightOffIcon color="inherit" fontSize="large" />
-                    </button>
-                  }
-
-                  {headerMenu.map(({ name, to }) => {
+          <header className={s.header}>
+            <div className={s.wrapper}>
+              <nav className={s.nav}>
+                <Sidebar />
+                <Clock />
+                {isShowBurgerMenu && (
+                  <button
+                    type="button"
+                    className={s.btn_open}
+                    onClick={onHandleShow}
+                  >
+                    <MenuIcon color="inherit" />
+                  </button>
+                )}
+                {isDesktop &&
+                  headerMenu.map(({ name, to }) => {
                     return (
-                      <div key={name} className={s.link_items}>
-                        <NavLink to={to} end className={getActiveMobileClass}>
+                      <div key={name}>
+                        <NavLink to={to} end className={getActiveClassName}>
                           {t(name)}
                         </NavLink>
                       </div>
                     );
                   })}
-                </div>
               </nav>
-            )}
-          </div>
-        </header>
-        <main className={s.main}>{<Outlet />}</main>
+              {isShowBurgerMenu && (
+                <nav
+                  onClick={onClickBackground}
+                  className={
+                    isShowMenu ? `${s.nav_mobile} ${s.showMob}` : s.nav_mobile
+                  }
+                >
+                  <div
+                    className={
+                      isShowMenu
+                        ? `${s.nav_mobile_wrapper} ${s.show}`
+                        : s.nav_mobile_wrapper
+                    }
+                  >
+                    {
+                      <button
+                        type="button"
+                        className={s.btn_close}
+                        onClick={onHandleShow}
+                      >
+                        <HighlightOffIcon color="inherit" fontSize="large" />
+                      </button>
+                    }
+                    <div style={{ marginBottom: 40 }}>
+                      <ToggleLang />
+                    </div>
 
-        <Footer />
+                    {headerMenu.map(({ name, to }) => {
+                      return (
+                        <div key={name} className={s.link_items}>
+                          <NavLink to={to} end className={getActiveMobileClass}>
+                            {t(name)}
+                          </NavLink>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </nav>
+              )}
+            </div>
+          </header>
+          <main className={s.main}>{<Outlet />}</main>
+
+          <Footer />
         </div>
       </Container>
     </>

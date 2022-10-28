@@ -13,7 +13,7 @@ const AboutFilmsPage = lazy(() => import('./pages/AboutFilms'));
 
 export const App = () => {
   return (
-    <BrowserRouter basename="/denis-myrhoiazov">
+    <BrowserRouter basename="/denis-myrhoiazov/">
       <Suspense fallback={<Loader/>}>
       <Routes>
         <Route element={<Header />}>

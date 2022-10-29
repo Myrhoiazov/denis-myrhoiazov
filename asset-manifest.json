@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/denis-myrhoiazov/static/css/main.c81e1cfd.css",
-    "main.js": "/denis-myrhoiazov/static/js/main.8d45dcd1.js",
+    "main.css": "/denis-myrhoiazov/static/css/main.c8a833a6.css",
+    "main.js": "/denis-myrhoiazov/static/js/main.954b5516.js",
     "static/css/665.0881536c.chunk.css": "/denis-myrhoiazov/static/css/665.0881536c.chunk.css",
-    "static/js/665.070b8f95.chunk.js": "/denis-myrhoiazov/static/js/665.070b8f95.chunk.js",
-    "static/css/887.acdbace5.chunk.css": "/denis-myrhoiazov/static/css/887.acdbace5.chunk.css",
-    "static/js/887.89192f66.chunk.js": "/denis-myrhoiazov/static/js/887.89192f66.chunk.js",
+    "static/js/665.b45e608f.chunk.js": "/denis-myrhoiazov/static/js/665.b45e608f.chunk.js",
+    "static/css/914.6574a488.chunk.css": "/denis-myrhoiazov/static/css/914.6574a488.chunk.css",
+    "static/js/914.341d9540.chunk.js": "/denis-myrhoiazov/static/js/914.341d9540.chunk.js",
     "static/css/660.dcf59e69.chunk.css": "/denis-myrhoiazov/static/css/660.dcf59e69.chunk.css",
-    "static/js/660.42a5e4f1.chunk.js": "/denis-myrhoiazov/static/js/660.42a5e4f1.chunk.js",
+    "static/js/660.a0b682bd.chunk.js": "/denis-myrhoiazov/static/js/660.a0b682bd.chunk.js",
     "static/media/1x-min.jpg": "/denis-myrhoiazov/static/media/1x-min.fef87fa7f17fa1c9dd5f.jpg",
     "index.html": "/denis-myrhoiazov/index.html",
     "static/media/getFetch.cjs": "/denis-myrhoiazov/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.c81e1cfd.css.map": "/denis-myrhoiazov/static/css/main.c81e1cfd.css.map",
-    "main.8d45dcd1.js.map": "/denis-myrhoiazov/static/js/main.8d45dcd1.js.map",
+    "main.c8a833a6.css.map": "/denis-myrhoiazov/static/css/main.c8a833a6.css.map",
+    "main.954b5516.js.map": "/denis-myrhoiazov/static/js/main.954b5516.js.map",
     "665.0881536c.chunk.css.map": "/denis-myrhoiazov/static/css/665.0881536c.chunk.css.map",
-    "665.070b8f95.chunk.js.map": "/denis-myrhoiazov/static/js/665.070b8f95.chunk.js.map",
-    "887.acdbace5.chunk.css.map": "/denis-myrhoiazov/static/css/887.acdbace5.chunk.css.map",
-    "887.89192f66.chunk.js.map": "/denis-myrhoiazov/static/js/887.89192f66.chunk.js.map",
+    "665.b45e608f.chunk.js.map": "/denis-myrhoiazov/static/js/665.b45e608f.chunk.js.map",
+    "914.6574a488.chunk.css.map": "/denis-myrhoiazov/static/css/914.6574a488.chunk.css.map",
+    "914.341d9540.chunk.js.map": "/denis-myrhoiazov/static/js/914.341d9540.chunk.js.map",
     "660.dcf59e69.chunk.css.map": "/denis-myrhoiazov/static/css/660.dcf59e69.chunk.css.map",
-    "660.42a5e4f1.chunk.js.map": "/denis-myrhoiazov/static/js/660.42a5e4f1.chunk.js.map"
+    "660.a0b682bd.chunk.js.map": "/denis-myrhoiazov/static/js/660.a0b682bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c81e1cfd.css",
-    "static/js/main.8d45dcd1.js"
+    "static/css/main.c8a833a6.css",
+    "static/js/main.954b5516.js"
   ]
 }

@@ -1,13 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
-// import Loader from '../../components/Loader/Loader';
 import s from './Cast.module.css';
 import axios from 'axios';
 
 const Cast = () => {
   const { moviesId } = useParams();
   const [cast, setCast] = useState([]);
-  // const [loader, setLoader] = useState(false);
 
   const serviceApi = useCallback(async () => {
     try {

@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
-// import Loader from '../../components/Loader/Loader';
 import s from './Reviews.module.css';
 import axios from 'axios';
 

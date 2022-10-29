@@ -1,6 +1,6 @@
-import FilmsSearch from 'components/filmsSearch';
+import FilmsSearch from 'components/FilmsSearch';
 import { useState, useEffect } from 'react';
-import Loader from 'components/loader';
+import Loader from 'components/Loader';
 import axios from 'axios';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';

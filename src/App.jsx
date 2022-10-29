@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/header';
 import Cast from './pages/AboutFilms/Cast';
 import Reviews from 'pages/AboutFilms/Reviews';
-import Loader from 'components/loader';
+import Loader from 'components/Loader';
 
 const HomePage = lazy(() => import('./pages/Home'));
 const MoviesPage = lazy(() => import('./pages/Movies'));

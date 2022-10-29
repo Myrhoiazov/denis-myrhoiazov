@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from 'react-responsive';
 import '../../i18next';
-import Container from 'components/container/Container';
+import Container from 'components/container';
 import s from './Home.module.scss';
 
-import ToggleLang from 'components/toggle-lang/ToggleLang';
+import ToggleLang from 'components/toggle-lang';
 
 const Home = () => {
   const { t } = useTranslation();

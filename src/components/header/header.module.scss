@@ -167,3 +167,38 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .nav_mobile_wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 300px;
+    height: 100%;
+
+    padding-left: 30px;
+    background-color: rgb(161, 161, 161);
+    box-shadow: -15px 0px 30px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.4s ease;
+
+    &.show {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn_open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

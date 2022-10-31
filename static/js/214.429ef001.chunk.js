@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[214],{6214:function(e,n,r){r.r(n),r.d(n,{default:function(){return s}});var t=r(434),a="Contact_inner_wrapper__ovfaC",c=r(184),s=function(){return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)(t.Z,{children:(0,c.jsx)("div",{className:a,children:(0,c.jsx)("h2",{children:"Contact"})})})})}}}]);
+//# sourceMappingURL=214.429ef001.chunk.js.map

@@ -3,13 +3,13 @@ import { lazy, Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/header';
-import Cast from './pages/AboutFilms/Cast';
-import Reviews from 'pages/AboutFilms/Reviews';
 import Loader from 'components/loader';
 
 const HomePage = lazy(() => import('./pages/Home'));
 const AboutMe = lazy(() => import('./pages/AboutMe'));
-const AboutFilmsPage = lazy(() => import('./pages/AboutFilms'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 export const App = () => {
   return (
@@ -19,10 +19,10 @@ export const App = () => {
           <Route element={<Header />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutMe />} />
-            <Route path="/movies/:moviesId" element={<AboutFilmsPage />}>
-              <Route path="cast" element={<Cast />} />
-              <Route path="reviews" element={<Reviews />} />
-            </Route>
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>

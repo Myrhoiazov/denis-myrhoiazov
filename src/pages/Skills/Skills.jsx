@@ -1,18 +1,38 @@
 import Container from 'components/container';
 import s from './Skills.module.scss';
-import { skillList } from './skillList';
+import { skillList, designList } from './skillList';
+import { useTranslation } from 'react-i18next';
+import '../../i18next';
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Container>
         <div className={s.inner_wrapper}>
-          <h2 className={s.title}>Skills</h2>
-          <ul className={s.items}>
-            {skillList.map(({ skills}) => (
-              <li key={skills} className={s.item}>{skills}</li>
-            ))}
-          </ul>
+          <h1 className={s.title}>{t('skills.title')}</h1>
+
+          <div className={s.items_wrapper}>
+            <h3 className={s.title_skills}>{t('skills.text1')}</h3>
+            <ul className={s.items}>
+              {skillList.map(({ skills }) => (
+                <li key={skills} className={s.item}>
+                  {skills}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={s.items_wrapper}>
+            <h3 className={s.title_skills}>{t('skills.text2')}</h3>
+            <ul className={s.items}>
+              {designList.map(({ name }) => (
+                <li key={name} className={s.item}>
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </Container>
     </>

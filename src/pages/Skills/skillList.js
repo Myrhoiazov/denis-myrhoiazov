@@ -21,19 +21,52 @@ export const skillList = [
   },
   {
     skills: 'Node.js',
-    status: 'done',
-    icon: 'in process',
+    status: 'in process',
+    icon: '',
   },
   {
     skills: 'Type Script',
-    status: 'done',
-    icon: 'in process',
+    status: 'in process',
+    icon: '',
   },
   {
     skills: 'React Native',
+    status: 'in process',
+    icon: '',
+  },
+  {
+    skills: 'Rest API',
     status: 'done',
-    icon: 'in process',
+    icon: '',
+  },
+  {
+    skills: 'React.js / Redux',
+    status: 'done',
+    icon: '',
+  },
+  {
+    skills: 'GitHub',
+    status: 'done',
+    icon: '',
+  },
+  {
+    skills: 'Git',
+    status: 'done',
+    icon: '',
   },
 ];
 
-export default skillList;
+export const designList = [
+  {
+    name: 'Figma',
+  },
+  {
+    name: 'Photoshop',
+  },
+  {
+    name: 'AdobeAfterEffect',
+  },
+  {
+    name: 'Final Cut Pro',
+  },
+];

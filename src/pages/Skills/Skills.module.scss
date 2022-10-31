@@ -1,22 +1,44 @@
 .inner_wrapper {
-  height: 70vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  padding-top: 60px;
 }
 
 .title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.items_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  .title_skills {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 400px;
+    padding: 0 10px;
+
+    margin-bottom: 20px;
+  }
 }
 
 .items {
   display: flex;
   flex-wrap: wrap;
-
-  max-width: 50%;
-
+  max-width: 70%;
+  width: 100%;
   gap: 10px;
 
   .item {
@@ -26,16 +48,17 @@
     min-width: 30%;
 
     font-weight: 400;
-
     border: 1px solid var(--text-color);
     border-radius: 4px;
     padding: 10px;
 
-    transition: all .4s linear;
+    transition: all 0.4s linear;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+      background-color: var(--text-color);
+      color: var(--item-hover);
     }
   }
 }

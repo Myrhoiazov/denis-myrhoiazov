@@ -18,6 +18,11 @@
     "text1": "Hi, I'm Denis – FrontEnd developer from Ukraine. I focus on HTML5, CSS3, JS, React. English — Intermediate.",
     "text2": "Looking for a remote job. Development, practice and work for the result are important for me. I intend to develop innovative technologies and deliver value to people.",
     "text3": "Ready to implement excellent projects with wonderful people."
-  }
+  },
 
+  "skills": {
+    "title": "Skills",
+    "text1": "Technologies in programming that I have studied and in the process of studying",
+    "text2": "Other technologies that I own."
+  }
 }

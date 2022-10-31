@@ -33,13 +33,16 @@ body {
     }
   }
   &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: var(--main-container-bg);
     box-shadow: var(--container-shadow);
     border-radius: 50%;
     width: 30px;
     height: 30px;
     transition: width 0.3s ease-in-out;
-    position: relative;
     cursor: pointer;
   }
 
@@ -51,15 +54,9 @@ body {
   }
 
   &-themeType {
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    // top: 8px;
-    // left: -7px;
-  }
-
-  &-themeContainer {
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &-themeLabel {
@@ -67,9 +64,8 @@ body {
     cursor: pointer;
 
     svg {
-      width: 14px;
-      height: 14px;
+      width: 15px;
+      height: 15px;
     }
   }
-
 }

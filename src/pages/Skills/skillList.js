@@ -54,6 +54,11 @@ export const skillList = [
     status: 'done',
     icon: '',
   },
+  {
+    skills: 'MongoDB',
+    status: 'in process',
+    icon: '',
+  },
 ];
 
 export const designList = [

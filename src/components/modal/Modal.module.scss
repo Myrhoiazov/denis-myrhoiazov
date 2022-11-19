@@ -1,6 +1,5 @@
 .overlay {
   position: fixed;
-  z-index: 2;
   left: 0;
   top: 0;
   bottom: 0;
@@ -23,8 +22,9 @@
   max-width: 60%;
   width: 80vw;
 
-  background-color: white; 
-  border-radius: 5px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
 
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

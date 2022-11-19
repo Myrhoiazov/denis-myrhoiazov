@@ -1,15 +1,33 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import './Theme.scss';
 
 const Theme = () => {
   const [isShrinkView] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  
+  const [theme, setTheme] = useState(()=> localStorage.getItem('theme') ?? 'light');
 
   const handleThemeChange = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark');
+    setTheme(prevState => (prevState === 'dark' ? 'light' : 'dark'));
   };
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem('theme');
+
+    if (!localTheme) {
+      localStorage.setItem('theme', 'light');
+      return;
+    }
+
+    localStorage.setItem('theme', theme);
+
+    if (theme === 'dark') {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const isDarkMode = theme === 'dark';
 
   return (
     <div className={`sidebar-container${isShrinkView ? ' shrink' : ''}`}>

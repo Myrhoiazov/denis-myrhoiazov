@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import style from './Modal.module.scss';
 
-
+const modalRoot = document.querySelector('#modal-root');
 
 const Modal = ({ onClose, children }) => {
   const handleChangeModal = e => {
@@ -17,7 +18,6 @@ const Modal = ({ onClose, children }) => {
   };
 
   useEffect(() => {
-
     window.addEventListener('keydown', handleChangeModal);
 
     return () => {
@@ -26,10 +26,11 @@ const Modal = ({ onClose, children }) => {
     // eslint-disable-next-line
   }, []);
 
-  return (
+  return createPortal(
     <div className={style.overlay} onClick={handleCloseBackdrop}>
       <div className={style.modal}>{children}</div>
-    </div>
+    </div>,
+    modalRoot
   );
 };
 

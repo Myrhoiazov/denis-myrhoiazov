@@ -16,9 +16,10 @@ const Skills = () => {
           <div className={s.items_wrapper}>
             <h3 className={s.title_skills}>{t('skills.text1')}</h3>
             <ul className={s.items}>
-              {skillList.map(({ skills }) => (
+              {skillList.map(({ skills, icon }) => (
                 <li key={skills} className={s.item}>
                   {skills}
+                  <span style={{width: 20}}>{icon}</span>
                 </li>
               ))}
             </ul>

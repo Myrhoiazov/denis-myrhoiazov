@@ -59,6 +59,21 @@ export const skillList = [
     status: 'in process',
     icon: '',
   },
+  {
+    skills: 'Parcel',
+    status: 'done',
+    icon: '',
+  },
+  {
+    skills: 'WebPack',
+    status: 'done',
+    icon: '',
+  },
+  {
+    skills: 'Handlebars',
+    status: 'done',
+    icon: '',
+  },
 ];
 
 export const designList = [

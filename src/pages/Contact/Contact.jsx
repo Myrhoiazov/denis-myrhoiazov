@@ -1,7 +1,8 @@
-import Container from 'components/container';
-import s from './Contact.module.scss';
-import Modal from '../../components/modal';
 import { useState } from 'react';
+import Container from 'components/container';
+import { contactList } from './contactList';
+import s from './Contact.module.scss';
+import Modal from 'components/modal';
 
 const Contact = () => {
   const [isOpenModal, setIasOpenModal] = useState(false);
@@ -22,6 +23,11 @@ const Contact = () => {
             <button type="button" className={s.btn} onClick={handleOpenModal}>
               Send message
             </button>
+            <ul className={s.socialList}>
+              {contactList.map(({name, icon, link}) => (
+                <li key={name} className={s.socialIcon}><a href={link} target='blank'>{icon}</a></li>
+              ))}
+            </ul>
           </div>
         </div>
         {isOpenModal && (

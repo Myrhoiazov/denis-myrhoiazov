@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[54],{54:function(e,r,n){n.r(r),n.d(r,{default:function(){return o}});var t=n(434),c="Portfolio_inner_wrapper__fl7LC",l=n(184),o=function(){return(0,l.jsx)(l.Fragment,{children:(0,l.jsx)(t.Z,{children:(0,l.jsx)("div",{className:c,children:(0,l.jsx)("h2",{children:"Portfolio"})})})})}}}]);
-//# sourceMappingURL=54.9539ed71.chunk.js.map

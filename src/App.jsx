@@ -1,9 +1,8 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { lazy} from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from 'components/header';
-import Loader from 'components/loader';
 
 const HomePage = lazy(() => import('./pages/Home'));
 const AboutMe = lazy(() => import('./pages/AboutMe'));
@@ -14,7 +13,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 export const App = () => {
   return (
     <BrowserRouter basename="/denis-myrhoiazov">
-      <Suspense fallback={<Loader />}>
+
         <Routes>
           <Route element={<Header />}>
             <Route path="/" element={<HomePage />} />
@@ -26,7 +25,7 @@ export const App = () => {
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>
-      </Suspense>
+
       <ToastContainer />
     </BrowserRouter>
   );

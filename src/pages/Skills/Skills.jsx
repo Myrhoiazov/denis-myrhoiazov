@@ -1,7 +1,8 @@
+import { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Container from 'components/container';
 import s from './Skills.module.scss';
 import { skillList, designList } from './skillList';
-import { useTranslation } from 'react-i18next';
 import '../../i18next';
 
 const Skills = () => {
@@ -19,7 +20,7 @@ const Skills = () => {
               {skillList.map(({ skills, icon }) => (
                 <li key={skills} className={s.item}>
                   {skills}
-                  <span style={{width: 20}}>{icon}</span>
+                  <span style={{ width: 20 }}>{icon}</span>
                 </li>
               ))}
             </ul>
@@ -40,4 +41,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default memo(Skills);

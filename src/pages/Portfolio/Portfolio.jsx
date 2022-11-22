@@ -7,6 +7,7 @@ const Portfolio = () => {
       <Container>
         <div className={s.inner_wrapper}>
           <h2>Portfolio</h2>
+          <p>soon...</p>
         </div>
       </Container>
     </>

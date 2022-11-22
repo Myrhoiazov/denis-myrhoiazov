@@ -1,3 +1,4 @@
+import { useState, memo, Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -8,10 +9,10 @@ import s from '../header/header.module.scss';
 import headerMenu from './headermenu';
 import Container from 'components/container';
 import '../../i18next';
-import { useState } from 'react';
 import Clock from 'components/clock';
 import Footer from 'components/footer';
 import ToggleLang from 'components/toggle-lang';
+import Loader from 'components/loader';
 
 const getActiveClassName = ({ isActive }) => {
   return isActive ? `${s.item} ${s.active}` : s.item;
@@ -107,8 +108,9 @@ const Header = () => {
               )}
             </div>
           </header>
-          <main className={s.main}>{<Outlet />}</main>
-
+          <main className={s.main}>
+            <Suspense fallback={<Loader />}>{<Outlet />}</Suspense>
+          </main>
           <Footer />
         </div>
       </Container>
@@ -116,4 +118,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

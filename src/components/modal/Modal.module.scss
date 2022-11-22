@@ -12,6 +12,9 @@
 
 .modal {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 
   top: 50%;

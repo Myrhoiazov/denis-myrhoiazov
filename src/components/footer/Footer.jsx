@@ -1,5 +1,6 @@
-import Container from 'components/container';
+import { memo } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import Container from 'components/container';
 import { ReactComponent as IconChat } from '../../assets/icon/hipchat.svg';
 import s from './Footer.module.scss';
 
@@ -12,7 +13,9 @@ const Footer = () => {
         <div className={s.container}>
           <Container>
             <div className={s.content}>
-              <p className={s.text}>My resume application <IconChat className={s.icon}/></p>
+              <p className={s.text}>
+                My resume application <IconChat className={s.icon} />
+              </p>
               <ul className={s.items}>
                 <li className={s.item}>
                   <a
@@ -63,4 +66,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

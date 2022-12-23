@@ -90,3 +90,18 @@ export const designList = [
     name: 'Final Cut Pro',
   },
 ];
+
+export const frameWorks = [
+  {
+    name: 'Bootstrap',
+  },
+  {
+    name: 'Photoshop',
+  },
+  {
+    name: 'AdobeAfterEffect',
+  },
+  {
+    name: 'Final Cut Pro',
+  },
+]

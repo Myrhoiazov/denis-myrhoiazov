@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/denis-myrhoiazov/static/css/main.9517de0e.css",
-    "main.js": "/denis-myrhoiazov/static/js/main.0f1ead7b.js",
+    "main.css": "/denis-myrhoiazov/static/css/main.ef80b63a.css",
+    "main.js": "/denis-myrhoiazov/static/js/main.64e77c96.js",
     "static/css/665.2b3c2533.chunk.css": "/denis-myrhoiazov/static/css/665.2b3c2533.chunk.css",
     "static/js/665.b45e608f.chunk.js": "/denis-myrhoiazov/static/js/665.b45e608f.chunk.js",
-    "static/css/110.cb4fdfd6.chunk.css": "/denis-myrhoiazov/static/css/110.cb4fdfd6.chunk.css",
+    "static/css/110.c58a9143.chunk.css": "/denis-myrhoiazov/static/css/110.c58a9143.chunk.css",
     "static/js/110.422eb05a.chunk.js": "/denis-myrhoiazov/static/js/110.422eb05a.chunk.js",
     "static/css/968.1b85982b.chunk.css": "/denis-myrhoiazov/static/css/968.1b85982b.chunk.css",
     "static/js/968.4319ca48.chunk.js": "/denis-myrhoiazov/static/js/968.4319ca48.chunk.js",
@@ -21,11 +21,11 @@
     "static/media/linkedin-bcg.svg": "/denis-myrhoiazov/static/media/linkedin-bcg.0904bc36db6c39e2d4ee42a4d8995045.svg",
     "static/media/getFetch.cjs": "/denis-myrhoiazov/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/facebook-bcg.svg": "/denis-myrhoiazov/static/media/facebook-bcg.64835acfc86f43b23c0c99e8b5b8ff59.svg",
-    "main.9517de0e.css.map": "/denis-myrhoiazov/static/css/main.9517de0e.css.map",
-    "main.0f1ead7b.js.map": "/denis-myrhoiazov/static/js/main.0f1ead7b.js.map",
+    "main.ef80b63a.css.map": "/denis-myrhoiazov/static/css/main.ef80b63a.css.map",
+    "main.64e77c96.js.map": "/denis-myrhoiazov/static/js/main.64e77c96.js.map",
     "665.2b3c2533.chunk.css.map": "/denis-myrhoiazov/static/css/665.2b3c2533.chunk.css.map",
     "665.b45e608f.chunk.js.map": "/denis-myrhoiazov/static/js/665.b45e608f.chunk.js.map",
-    "110.cb4fdfd6.chunk.css.map": "/denis-myrhoiazov/static/css/110.cb4fdfd6.chunk.css.map",
+    "110.c58a9143.chunk.css.map": "/denis-myrhoiazov/static/css/110.c58a9143.chunk.css.map",
     "110.422eb05a.chunk.js.map": "/denis-myrhoiazov/static/js/110.422eb05a.chunk.js.map",
     "968.1b85982b.chunk.css.map": "/denis-myrhoiazov/static/css/968.1b85982b.chunk.css.map",
     "968.4319ca48.chunk.js.map": "/denis-myrhoiazov/static/js/968.4319ca48.chunk.js.map",
@@ -35,7 +35,7 @@
     "731.68f57b9f.chunk.js.map": "/denis-myrhoiazov/static/js/731.68f57b9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9517de0e.css",
-    "static/js/main.0f1ead7b.js"
+    "static/css/main.ef80b63a.css",
+    "static/js/main.64e77c96.js"
   ]
 }

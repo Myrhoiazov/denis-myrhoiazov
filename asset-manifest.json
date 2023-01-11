@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/denis-myrhoiazov/static/css/main.cc1d06cc.css",
-    "main.js": "/denis-myrhoiazov/static/js/main.e2ff1738.js",
+    "main.js": "/denis-myrhoiazov/static/js/main.39e6c045.js",
     "static/css/665.2b3c2533.chunk.css": "/denis-myrhoiazov/static/css/665.2b3c2533.chunk.css",
     "static/js/665.b45e608f.chunk.js": "/denis-myrhoiazov/static/js/665.b45e608f.chunk.js",
     "static/css/110.c58a9143.chunk.css": "/denis-myrhoiazov/static/css/110.c58a9143.chunk.css",
     "static/js/110.422eb05a.chunk.js": "/denis-myrhoiazov/static/js/110.422eb05a.chunk.js",
     "static/css/968.1b85982b.chunk.css": "/denis-myrhoiazov/static/css/968.1b85982b.chunk.css",
     "static/js/968.4319ca48.chunk.js": "/denis-myrhoiazov/static/js/968.4319ca48.chunk.js",
-    "static/css/690.cc55986b.chunk.css": "/denis-myrhoiazov/static/css/690.cc55986b.chunk.css",
+    "static/css/690.c531ed9d.chunk.css": "/denis-myrhoiazov/static/css/690.c531ed9d.chunk.css",
     "static/js/690.5c15d3f3.chunk.js": "/denis-myrhoiazov/static/js/690.5c15d3f3.chunk.js",
     "static/css/731.a639b088.chunk.css": "/denis-myrhoiazov/static/css/731.a639b088.chunk.css",
     "static/js/731.68f57b9f.chunk.js": "/denis-myrhoiazov/static/js/731.68f57b9f.chunk.js",
@@ -37,20 +37,20 @@
     "static/media/getFetch.cjs": "/denis-myrhoiazov/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/facebook-bcg.svg": "/denis-myrhoiazov/static/media/facebook-bcg.64835acfc86f43b23c0c99e8b5b8ff59.svg",
     "main.cc1d06cc.css.map": "/denis-myrhoiazov/static/css/main.cc1d06cc.css.map",
-    "main.e2ff1738.js.map": "/denis-myrhoiazov/static/js/main.e2ff1738.js.map",
+    "main.39e6c045.js.map": "/denis-myrhoiazov/static/js/main.39e6c045.js.map",
     "665.2b3c2533.chunk.css.map": "/denis-myrhoiazov/static/css/665.2b3c2533.chunk.css.map",
     "665.b45e608f.chunk.js.map": "/denis-myrhoiazov/static/js/665.b45e608f.chunk.js.map",
     "110.c58a9143.chunk.css.map": "/denis-myrhoiazov/static/css/110.c58a9143.chunk.css.map",
     "110.422eb05a.chunk.js.map": "/denis-myrhoiazov/static/js/110.422eb05a.chunk.js.map",
     "968.1b85982b.chunk.css.map": "/denis-myrhoiazov/static/css/968.1b85982b.chunk.css.map",
     "968.4319ca48.chunk.js.map": "/denis-myrhoiazov/static/js/968.4319ca48.chunk.js.map",
-    "690.cc55986b.chunk.css.map": "/denis-myrhoiazov/static/css/690.cc55986b.chunk.css.map",
+    "690.c531ed9d.chunk.css.map": "/denis-myrhoiazov/static/css/690.c531ed9d.chunk.css.map",
     "690.5c15d3f3.chunk.js.map": "/denis-myrhoiazov/static/js/690.5c15d3f3.chunk.js.map",
     "731.a639b088.chunk.css.map": "/denis-myrhoiazov/static/css/731.a639b088.chunk.css.map",
     "731.68f57b9f.chunk.js.map": "/denis-myrhoiazov/static/js/731.68f57b9f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc1d06cc.css",
-    "static/js/main.e2ff1738.js"
+    "static/js/main.39e6c045.js"
   ]
 }

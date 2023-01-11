@@ -32,7 +32,7 @@ const Portfolio = () => {
             }}
           >
             {portfolioList.map(item => (
-              <PortfolioItem item={item} />
+                <PortfolioItem item={item} />
             ))}
           </Box>
         </Box>

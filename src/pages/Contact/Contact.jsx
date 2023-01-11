@@ -32,7 +32,7 @@ const Contact = () => {
         </div>
         {isOpenModal && (
           <Modal onClose={handleOpenModal}>
-            <h1>Open Modal</h1>
+            <h1>Sorry soon i do it ...</h1>
           </Modal>
         )}
       </Container>

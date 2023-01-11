@@ -14,23 +14,23 @@ export const portfolioList = [
   {
     title: 'Kids Like application',
     text: '',
-    link: '',
+    link: 'https://kidslikes.netlify.app/auth',
     img_bg: `${KidsLike}`,
-    img_medium: '',
-    img_small: '',
-  },
-  {
-    title: 'Kids Like application',
-    text: '',
-    link: '',
-    img_bg: `${img2}`,
     img_medium: '',
     img_small: '',
   },
   {
     title: 'Viter studio',
     text: '',
-    link: '',
+    link: 'https://viter-hairstudio.com.ua/',
+    img_bg: `${img2}`,
+    img_medium: '',
+    img_small: '',
+  },
+  {
+    title: 'Kameleon',
+    text: '',
+    link: 'https://myrhoiazov.github.io/bootstrap-app/',
     img_bg: `${img1}`,
     img_medium: '',
     img_small: '',
@@ -38,7 +38,7 @@ export const portfolioList = [
   {
     title: 'WevStudio',
     text: '',
-    link: '',
+    link: 'https://myrhoiazov.github.io/goit-markup-hw-08/',
     img_bg: `${img3}`,
     img_medium: '',
     img_small: '',
@@ -46,7 +46,7 @@ export const portfolioList = [
   {
     title: 'Book Contact',
     text: '',
-    link: '',
+    link: 'https://myrhoiazov.github.io/goit-react-hw-08-phonebook/',
     img_bg: `${img4}`,
     img_medium: '',
     img_small: '',
@@ -54,7 +54,7 @@ export const portfolioList = [
   {
     title: 'Trend Film',
     text: '',
-    link: '',
+    link: 'https://myrhoiazov.github.io/goit-react-hw-05-movies/',
     img_bg: `${img5}`,
     img_medium: '',
     img_small: '',
@@ -62,7 +62,7 @@ export const portfolioList = [
   {
     title: 'Filmoteka',
     text: '',
-    link: '',
+    link: 'https://myrhoiazov.github.io/js-team-project/',
     img_bg: `${img6}`,
     img_medium: '',
     img_small: '',
@@ -70,7 +70,7 @@ export const portfolioList = [
   {
     title: 'IceCream',
     text: '',
-    link: '',
+    link: 'https://myrhoiazov.github.io/go-it-project-html-css/',
     img_bg: `${img7}`,
     img_medium: '',
     img_small: '',
@@ -78,7 +78,7 @@ export const portfolioList = [
   {
     title: 'CodeX',
     text: '',
-    link: '',
+    link: 'https://myrhoiazov.github.io/codX-test/',
     img_bg: `${img8}`,
     img_medium: '',
     img_small: '',
@@ -86,7 +86,7 @@ export const portfolioList = [
   {
     title: 'Karnaval Fest',
     text: '',
-    link: '',
+    link: 'https://karnavalfest.com/',
     img_bg: `${img9}`,
     img_medium: '',
     img_small: '',
@@ -94,7 +94,7 @@ export const portfolioList = [
   {
     title: 'Dance Studio',
     text: '',
-    link: '',
+    link: 'https://dandancecomplex.com/',
     img_bg: `${img10}`,
     img_medium: '',
     img_small: '',

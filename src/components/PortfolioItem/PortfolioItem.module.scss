@@ -1,6 +1,14 @@
+@import '../../shared/styles/variables';
+
 .item {
   position: relative;
   cursor: pointer;
+  box-shadow: $active-shadow;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 
   &::after {
     content: '';
@@ -12,7 +20,7 @@
     background-color: rgba(97, 97, 97, 0.7);
     opacity: 0;
 
-    transition: opacity 0.2s linear;
+    transition: opacity 0.2s ease;
   }
 
   &:hover::after {

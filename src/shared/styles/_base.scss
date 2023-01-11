@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+@import './variables';
 
 *,
 *::before,
@@ -7,7 +7,9 @@
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  // font-family: 'Futura-pt', 'Nunito Sans', sans-serif;
+  font-family: $main-font;
+
   margin: 0;
   overflow: auto;
 }
@@ -42,7 +44,7 @@ html {
   overflow: overlay;
 }
 
-svg{
+svg {
   display: inline-block;
 }
 

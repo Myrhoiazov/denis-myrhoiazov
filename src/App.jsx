@@ -8,6 +8,8 @@ const HomePage = lazy(() => import('./pages/Home'));
 const AboutMe = lazy(() => import('./pages/AboutMe'));
 const Skills = lazy(() => import('./pages/Skills'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
+const PortfolioItem = lazy(() => import('./pages/PortfolioItem'));
+
 const Contact = lazy(() => import('./pages/Contact'));
 
 export const App = () => {
@@ -20,6 +22,7 @@ export const App = () => {
             <Route path="/about" element={<AboutMe />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:id" element={<PortfolioItem />} />
             <Route path="/contact" element={<Contact />} />
 
             <Route path="*" element={<Navigate to="/" />} />

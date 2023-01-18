@@ -3,6 +3,7 @@ import Container from 'components/container';
 import { contactList } from './contactList';
 import s from './Contact.module.scss';
 import Modal from 'components/modal';
+import Button from 'components/Button';
 
 const Contact = () => {
   const [isOpenModal, setIasOpenModal] = useState(false);
@@ -20,9 +21,9 @@ const Contact = () => {
             <p className={s.text}>
               Want to know more or just chat? <br /> You are welcome!
             </p>
-            <button type="button" className={s.btn} onClick={handleOpenModal}>
+            <Button onClick={handleOpenModal}>
               Send message
-            </button>
+            </Button>
             <ul className={s.socialList}>
               {contactList.map(({name, icon, link}) => (
                 <li key={name} className={s.socialIcon}><a href={link} target='blank'>{icon}</a></li>

@@ -12,6 +12,7 @@ import img10 from '../../assets/image-project/Screenshot 2023-01-10 at 18.07.57.
 
 export const portfolioList = [
   {
+    id: 1,
     title: 'Kids Like application',
     text: '',
     link: 'https://kidslikes.netlify.app/auth',
@@ -20,6 +21,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 2,
     title: 'Viter studio',
     text: '',
     link: 'https://viter-hairstudio.com.ua/',
@@ -28,14 +30,17 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 3,
     title: 'Kameleon',
-    text: '',
+    text: 'It"s was test task for company',
+    skills: ['HTML5', 'Bootstrap', 'Sass', 'JavaScript', 'JQuery'],
     link: 'https://myrhoiazov.github.io/bootstrap-app/',
     img_bg: `${img1}`,
     img_medium: '',
     img_small: '',
   },
   {
+    id: 4,
     title: 'WevStudio',
     text: '',
     link: 'https://myrhoiazov.github.io/goit-markup-hw-08/',
@@ -44,6 +49,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 5,
     title: 'Book Contact',
     text: '',
     link: 'https://myrhoiazov.github.io/goit-react-hw-08-phonebook/',
@@ -52,6 +58,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 6,
     title: 'Trend Film',
     text: '',
     link: 'https://myrhoiazov.github.io/goit-react-hw-05-movies/',
@@ -60,6 +67,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 7,
     title: 'Filmoteka',
     text: '',
     link: 'https://myrhoiazov.github.io/js-team-project/',
@@ -68,6 +76,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 8,
     title: 'IceCream',
     text: '',
     link: 'https://myrhoiazov.github.io/go-it-project-html-css/',
@@ -76,6 +85,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 9,
     title: 'CodeX',
     text: '',
     link: 'https://myrhoiazov.github.io/codX-test/',
@@ -84,6 +94,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 10,
     title: 'Karnaval Fest',
     text: '',
     link: 'https://karnavalfest.com/',
@@ -92,6 +103,7 @@ export const portfolioList = [
     img_small: '',
   },
   {
+    id: 11,
     title: 'Dance Studio',
     text: '',
     link: 'https://dandancecomplex.com/',

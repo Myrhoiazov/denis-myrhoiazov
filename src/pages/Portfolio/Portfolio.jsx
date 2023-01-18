@@ -4,6 +4,7 @@ import { portfolioList } from './portfolioList';
 import PortfolioItem from 'components/PortfolioItem/PortfolioItem';
 
 const Portfolio = () => {
+
   return (
     <>
       <Container>
@@ -32,7 +33,7 @@ const Portfolio = () => {
             }}
           >
             {portfolioList.map(item => (
-                <PortfolioItem item={item} />
+              <PortfolioItem item={item} key={item.id}/>
             ))}
           </Box>
         </Box>

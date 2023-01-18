@@ -1,9 +1,16 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import s from './PortfolioItem.module.scss';
 
 const PortfolioItem = ({ item }) => {
+  const location = useLocation();
+
   return (
-    <a href={item.link} className={s.link}>
+    <Link
+      to={`/portfolio/${item.id}`}
+      state={{ from: location }}
+      className={s.link}
+    >
       <div className={s.container}>
         <img
           src={`${item.img_bg}?w=164&h=164&fit=crop&auto=format`}
@@ -14,7 +21,7 @@ const PortfolioItem = ({ item }) => {
         />
         <h3 className={s.title}>{item.title}</h3>
       </div>
-    </a>
+    </Link>
   );
 };
 

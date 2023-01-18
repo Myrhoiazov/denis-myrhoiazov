@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { portfolioList } from '../Portfolio/portfolioList';
 
-const PortfolioItem = () => {
+const Project = () => {
   const [project, setProject] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
@@ -23,4 +23,4 @@ const PortfolioItem = () => {
   return <>{isLoading ? <Loader /> : <PortfolioReviews item={project} />}</>;
 };
 
-export default PortfolioItem;
+export default Project;

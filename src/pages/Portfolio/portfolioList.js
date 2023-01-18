@@ -14,6 +14,8 @@ export const portfolioList = [
   {
     id: 1,
     title: 'Kids Like application',
+    skills: ['Sass', 'React', 'Redux', 'REST API', 'Parcel', 'User Auth'],
+    role: 'Developer',
     text: '',
     link: 'https://kidslikes.netlify.app/auth',
     img_bg: `${KidsLike}`,
@@ -23,6 +25,8 @@ export const portfolioList = [
   {
     id: 2,
     title: 'Viter studio',
+    skills: ['HTML5', 'Sass', 'Java Script', 'Parcel', 'JQuery'],
+    role: 'Developer',
     text: '',
     link: 'https://viter-hairstudio.com.ua/',
     img_bg: `${img2}`,
@@ -32,8 +36,9 @@ export const portfolioList = [
   {
     id: 3,
     title: 'Kameleon',
-    text: 'It"s was test task for company',
+    role: 'Developer',
     skills: ['HTML5', 'Bootstrap', 'Sass', 'JavaScript', 'JQuery'],
+    text: 'It"s was test task for company',
     link: 'https://myrhoiazov.github.io/bootstrap-app/',
     img_bg: `${img1}`,
     img_medium: '',
@@ -42,6 +47,8 @@ export const portfolioList = [
   {
     id: 4,
     title: 'WevStudio',
+    role: 'Developer',
+    skills: ['HTML5', 'Sass', 'JavaScript'],
     text: '',
     link: 'https://myrhoiazov.github.io/goit-markup-hw-08/',
     img_bg: `${img3}`,
@@ -51,6 +58,8 @@ export const portfolioList = [
   {
     id: 5,
     title: 'Book Contact',
+    skills: ['Sass', 'React', 'Redux', 'REST API', 'REST API', 'User Auth'],
+    role: 'Developer',
     text: '',
     link: 'https://myrhoiazov.github.io/goit-react-hw-08-phonebook/',
     img_bg: `${img4}`,
@@ -60,6 +69,8 @@ export const portfolioList = [
   {
     id: 6,
     title: 'Trend Film',
+    skills: ['Sass', 'React', 'Redux', 'REST API', 'REST API'],
+    role: 'Developer',
     text: '',
     link: 'https://myrhoiazov.github.io/goit-react-hw-05-movies/',
     img_bg: `${img5}`,
@@ -69,6 +80,8 @@ export const portfolioList = [
   {
     id: 7,
     title: 'Filmoteka',
+    skills: ['HTML5', 'Sass', 'Java Script', 'Parcel', 'Rest Api'],
+    role: 'Scrum master',
     text: '',
     link: 'https://myrhoiazov.github.io/js-team-project/',
     img_bg: `${img6}`,
@@ -78,6 +91,8 @@ export const portfolioList = [
   {
     id: 8,
     title: 'IceCream',
+    skills: ['HTML5', 'Sass', 'Java Script', 'Parcel'],
+    role: 'Developer',
     text: '',
     link: 'https://myrhoiazov.github.io/go-it-project-html-css/',
     img_bg: `${img7}`,
@@ -87,6 +102,8 @@ export const portfolioList = [
   {
     id: 9,
     title: 'CodeX',
+    skills: ['HTML5', 'Sass'],
+    role: 'Developer',
     text: '',
     link: 'https://myrhoiazov.github.io/codX-test/',
     img_bg: `${img8}`,
@@ -96,6 +113,8 @@ export const portfolioList = [
   {
     id: 10,
     title: 'Karnaval Fest',
+    skills: ['Wordpress'],
+    role: 'Developer',
     text: '',
     link: 'https://karnavalfest.com/',
     img_bg: `${img9}`,
@@ -105,6 +124,8 @@ export const portfolioList = [
   {
     id: 11,
     title: 'Dance Studio',
+    skills: ['Wordpress'],
+    role: 'Developer',
     text: '',
     link: 'https://dandancecomplex.com/',
     img_bg: `${img10}`,

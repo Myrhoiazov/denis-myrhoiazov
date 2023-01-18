@@ -14,14 +14,26 @@ const PortfolioReviews = ({ item }) => {
         <div className={s.box__data}>
           <h1 className={s.box__data_title}>{item.title}</h1>
           <div className={s.box__data_skills}>
+            <p className={s.box__data_text_text}>Skills:</p>
             {item?.skills?.map(skill => (
               <p key={skill} className={s.box__data_skill}>
                 {skill}
               </p>
             ))}
           </div>
-          <p className={s.box__data_text}>{item.text}</p>
-          <Link to={location.state?.from ?? '/portfolio'} className={s.box__link}> go back</Link>
+          <p className={s.box__data_text}>
+            {' '}
+            Role: <span className={s.box__data_text_accent}>{item.role}</span>
+          </p>
+          <p className={s.box__data_text_text}>
+            Summary:<span className={s.box__data_text_accent}>{item.text}</span>
+          </p>
+          <Link
+            to={location.state?.from ?? '/portfolio'}
+            className={s.box__link}
+          >
+            go back
+          </Link>
         </div>
       </div>
     </div>

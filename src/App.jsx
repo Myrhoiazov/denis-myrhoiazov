@@ -8,7 +8,7 @@ const HomePage = lazy(() => import('./pages/Home'));
 const AboutMe = lazy(() => import('./pages/AboutMe'));
 const Skills = lazy(() => import('./pages/Skills'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
-const PortfolioItem = lazy(() => import('./pages/PortfolioItem'));
+const PortfolioItem = lazy(() => import('./pages/Project'));
 
 const Contact = lazy(() => import('./pages/Contact'));
 

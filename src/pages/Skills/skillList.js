@@ -10,7 +10,7 @@ export const skillList = [
     icon: '',
   },
   {
-    skills: 'JS',
+    skills: 'JavaScript',
     status: 'done',
     icon: '',
   },
@@ -45,6 +45,11 @@ export const skillList = [
     icon: '',
   },
   {
+    skills: 'JQuery',
+    status: 'done',
+    icon: '',
+  },
+  {
     skills: 'GitHub',
     status: 'done',
     icon: '',
@@ -55,7 +60,22 @@ export const skillList = [
     icon: '',
   },
   {
+    skills: 'Bitbucket',
+    status: 'done',
+    icon: '',
+  },
+  {
     skills: 'MongoDB',
+    status: 'in process',
+    icon: '',
+  },
+  {
+    skills: 'Firebase',
+    status: 'in process',
+    icon: '',
+  },
+  {
+    skills: 'MySQL',
     status: 'in process',
     icon: '',
   },
@@ -71,6 +91,16 @@ export const skillList = [
   },
   {
     skills: 'Handlebars',
+    status: 'done',
+    icon: '',
+  },
+  {
+    skills: 'Bootstrap',
+    status: 'done',
+    icon: '',
+  },
+  {
+    skills: 'MaterialUi',
     status: 'done',
     icon: '',
   },

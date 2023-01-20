@@ -25,6 +25,18 @@ const PortfolioReviews = ({ item }) => {
             {' '}
             Role: <span className={s.box__data_text_accent}>{item.role}</span>
           </p>
+          <p className={s.box__data_text}>
+            WebLink:
+            <a className={s.box__data_text_accent} href={item.link}>
+              Link...
+            </a>
+          </p>
+          <p className={s.box__data_text}>
+            SourceCode:
+            <a className={s.box__data_text_accent} href={item.source_link}>
+              Link...
+            </a>
+          </p>
           <p className={s.box__data_text_text}>
             Summary:<span className={s.box__data_text_accent}>{item.text}</span>
           </p>

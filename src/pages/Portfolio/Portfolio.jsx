@@ -1,10 +1,9 @@
 import { Box, Typography } from '@mui/material';
 import Container from 'components/container';
 import { portfolioList } from './portfolioList';
-import PortfolioItem from 'components/PortfolioItem/PortfolioItem';
+import PortfolioItem from 'components/PortfolioCard/PortfolioCard';
 
 const Portfolio = () => {
-
   return (
     <>
       <Container>
@@ -18,8 +17,8 @@ const Portfolio = () => {
           }}
         >
           <Typography
-            variant="h5"
-            sx={{ marginBottom: 3, textAlign: 'center' }}
+            variant="h4"
+            sx={{ marginBottom: 3, textAlign: 'center', fontWeight: 700 }}
           >
             Portfolio
           </Typography>
@@ -33,7 +32,7 @@ const Portfolio = () => {
             }}
           >
             {portfolioList.map(item => (
-              <PortfolioItem item={item} key={item.id}/>
+              <PortfolioItem item={item} key={item.id} />
             ))}
           </Box>
         </Box>

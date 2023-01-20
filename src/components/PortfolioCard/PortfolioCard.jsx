@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import s from './PortfolioItem.module.scss';
+import s from './PortfolioCard.module.scss';
 
-const PortfolioItem = ({ item }) => {
+const PortfolioCard = ({ item }) => {
   const location = useLocation();
 
   return (
@@ -25,4 +25,4 @@ const PortfolioItem = ({ item }) => {
   );
 };
 
-export default PortfolioItem;
+export default PortfolioCard;
